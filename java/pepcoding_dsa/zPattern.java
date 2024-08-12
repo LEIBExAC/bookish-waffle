@@ -1,3 +1,4 @@
+package pepcoding_dsa;
 public class zPattern {
     public static void main(String[] args) {
         System.out.println("1st Method Z Pattern");

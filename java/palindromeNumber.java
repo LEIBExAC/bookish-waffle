@@ -35,5 +35,27 @@ class palindromeNumber {
         } else {
             System.out.println("Not a Palindrome");
         }
+
+		Solution1 sd = new Solution1();
+		System.out.println(sd.isPalindrome(121));
 	}
+}
+
+class Solution1 {
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        int rev_n = 0;
+        while (x > 0) {
+            rev_n = rev_n * 10 + x % 10;
+            x = x / 10;
+        }
+		System.out.println("Reverse of n = " + rev_n);
+        if (rev_n == x) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

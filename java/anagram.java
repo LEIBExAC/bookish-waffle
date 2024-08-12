@@ -1,22 +1,28 @@
-
 import java.util.Scanner;
 
 public class anagram {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str1 = sc.nextLine();
-        String str2 = sc.nextLine();
-        sc.close();
-        Boolean isAnagram = true;
+    public static boolean ana(String str1, String str2) {
+        int strArray[] = new int[26];
         if (str1.length() != str2.length()) {
-            isAnagram = false;
-        } else {
-            for (int i = 0; i < str1.length(); i++) {
-                if (str1.charAt(i) != str2.charAt(str2.length() - i - 1)) {
-                    isAnagram = false;
-                }
+            return false;
+        }
+        for (int i = 0; i < str1.length(); i++) {
+            strArray[str1.charAt(i) - 'a']++;
+        }
+        for (int j = 0; j < str2.length(); j++) {
+            strArray[str2.charAt(j) - 'a']--;
+            if (strArray[str2.charAt(j) - 'a'] < 0) {
+                return false;
             }
         }
-        System.out.println(isAnagram);
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str1 = sc.next();
+        String str2 = sc.next();
+        sc.close();
+        System.out.println(ana(str1, str2));
     }
 }
