@@ -1,5 +1,6 @@
 package pepcoding_dsa;
 
+import java.io.*;
 import java.util.Scanner;
 
 class prime {
@@ -7,7 +8,7 @@ class prime {
         if (n == 1) {
             return false;
         }
-        for (int i = 2; i < n / 2; i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
             }
@@ -16,7 +17,25 @@ class prime {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try {
+            File myFile = new File("C:\\Users\\chatu\\OneDrive\\Documents\\practice\\java\\pepcoding_dsa\\collection_primes\\someprimes.txt");
+            Scanner myReader = new Scanner(myFile);
+            while (myReader.hasNextInt()) {
+                int data = myReader.nextInt();
+                if (isPrime(data)) {
+                    System.out.println("The number " + data + " is prime.");
+                } else {
+                    System.out.println("The number " + data + " is not prime.");
+                }
+                System.out.println("-----------------------------");
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+       /*Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of primes you want to check: ");
         int t = sc.nextInt();
         for (int i = 0; i < t; i++) {
@@ -29,6 +48,6 @@ class prime {
             }
             System.out.println("-----------------------------");
         }
-        sc.close();
+        sc.close();*/
     }
 }
