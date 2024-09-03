@@ -1,6 +1,6 @@
 package pepcoding_dsa;
 
-import java.io.*;
+//import java.io.*;
 import java.util.Scanner;
 
 class prime {
@@ -17,7 +17,7 @@ class prime {
     }
 
     public static void main(String[] args) {
-        try {
+        /*try {
             File myFile = new File("C:\\Users\\chatu\\OneDrive\\Documents\\practice\\java\\pepcoding_dsa\\collection_primes\\someprimes.txt");
             Scanner myReader = new Scanner(myFile);
             while (myReader.hasNextInt()) {
@@ -33,9 +33,9 @@ class prime {
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
-        }
+        }*/
 
-       /*Scanner sc = new Scanner(System.in);
+       Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of primes you want to check: ");
         int t = sc.nextInt();
         for (int i = 0; i < t; i++) {
@@ -48,6 +48,6 @@ class prime {
             }
             System.out.println("-----------------------------");
         }
-        sc.close();*/
+        sc.close();
     }
 }
