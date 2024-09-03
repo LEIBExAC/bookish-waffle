@@ -8,8 +8,23 @@ import java.util.Scanner;
 public class PythagoreanTriplet {
 
     static boolean isPythagoreanTriplet(int a, int b, int c){
-        return true;
-    }
+        System.out.println("a: " + a + ", b: " + b + ", c: " + c);
+        System.out.println( a * a + b * b + " == " + c * c + " : " + (a * a + b * b == c * c));
+        System.out.println( a * a + c * c + " == " + b * b + " : " + (a * a + c * c == b * b));
+        System.out.println( b * b + c * c + " == " + a * a + " : " + (b * b + c * c == a * a));
+        int max = a;
+        if (b >= max) {
+            max = b;
+            return max * max == c * c + a * a;
+        }
+        if (c >= max) {
+            max = c;
+            return max * max == b * b + a * a;
+        }
+        return max * max == b * b + c * c;
+    //return a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a;
+
+}
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
