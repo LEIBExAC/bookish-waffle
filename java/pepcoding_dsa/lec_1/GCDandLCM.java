@@ -1,4 +1,4 @@
-package pepcoding_dsa;
+package pepcoding_dsa.lec_1;
 
 import java.util.Scanner;
 
@@ -16,6 +16,7 @@ public class GCDandLCM {
         }*/
         
         //int gcd = b == 0 ? a : gcd(b, a % b);
+        //int gcd = a == 0 ? b : gcd(b % a, a);
         while (a % b != 0) {
             int rem = a % b;
             a = b;

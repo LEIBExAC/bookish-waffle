@@ -13,7 +13,7 @@
  * 4 is at 1st index so 4th index will have 1
  */
 
-package pepcoding_dsa;
+package pepcoding_dsa.lec_1;
 
 import java.util.Scanner;
 

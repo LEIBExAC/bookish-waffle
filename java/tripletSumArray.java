@@ -1,4 +1,4 @@
-class Solution{
+class tripletSumArray {
     
   
     static int maxTripletSum(int a[], int n)

@@ -1,4 +1,4 @@
-package pepcoding_dsa;
+package pepcoding_dsa.lec_1;
 
 public class vars {
     public static void main(String[] args) {
