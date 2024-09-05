@@ -1,5 +1,11 @@
 package pepcoding_dsa.lec_1;
 
+/*
+* The problem is to count the number of bulbs on if N bulbs toggle on N number of voltages, but each voltage only toggle it's multiple
+Example Voltage 2 will only toggle bulbs of 2's multiple, Voltage 3 will only toggle multiple of 3 and Voltage N will only toggle the bulb number multiple of N.
+
+So after N voltage toggles' print the bulb which are on.*/
+
 import java.util.Scanner;
 
 public class BenjaminBulb {
