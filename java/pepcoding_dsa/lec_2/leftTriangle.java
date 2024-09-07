@@ -1,4 +1,4 @@
-package pepcoding_dsa.lec_1;
+package pepcoding_dsa.lec_2;
 
 import java.util.Scanner;
 
