@@ -32,3 +32,29 @@ public class leftTriangle {
         leftPattern(n);
     }
 }
+
+// Output:
+/*
+ * 1st Method Left Triangle
+ * | *
+ * | * *
+ * | * * *
+ * | * * * *
+ * | * * * * *
+ * 
+ * 2nd Method
+ * | *
+ * | **
+ * | ***
+ * | ****
+ * | *****
+ * 
+ * 
+ * | 3rd Method
+ * | Enter the number of rows: 5
+ * | *
+ * | * *
+ * | * * *
+ * | * * * *
+ * | * * * * *
+ */
