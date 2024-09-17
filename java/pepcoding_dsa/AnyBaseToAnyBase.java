@@ -2,7 +2,7 @@ package pepcoding_dsa.lec_3;
 
 import java.util.Scanner;
 
-//Using long for longer values
+//Using long for larger values
 public class AnyBaseToAnyBase {
     static long anyBaseToAnyBase(long num, long base1, long base2) {
         long conNum = 0;
