@@ -5,12 +5,21 @@ import java.util.Scanner;
 //Using long for larger values
 public class AnyBaseToAnyBase {
     static long anyBaseToAnyBase(long num, long base1, long base2) {
-        long conNum = 0;
-        int c = 0;
+       // long conNum = 0;
+        //My way
+      /* int c = 0;
         while (num > 0) {
             conNum += ((num % base2) * ((int) Math.pow(base1, c++)));
             num /= base2;
         }
+      */
+
+      
+      //Lectures way
+      //1st convert to Decimal
+      //2nd then decimal to the given base
+        long toDecimal = AnyBaseToDecimal.anyBaseToDecimal(num, base1);
+        long conNum = DecimalToAnyBase.decimalToAnyBase(toDecimal, base2);
         return conNum;
     }
 
