@@ -8,7 +8,7 @@ public class NextGreaterElementOnRight {
     static int[] nextGreaterElementOnRight(int[] arr) {
         Stack<Integer> stack = new Stack<Integer>();
         int[] res = new int[arr.length];
-        // Some how works but not perfectly
+        // Works
         stack.push(0);
         for(int i = 1; i < arr.length; i++){
             while (stack.size() > 0 && arr[i] >= arr[stack.peek()]) {
