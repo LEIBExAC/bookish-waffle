@@ -12,7 +12,7 @@ public class InfixEvalution {
             char ch = str.charAt(i);
             if(ch == '(') {
                 // push
-                operands.push(ch - '0');
+                operators.push(ch);
             } else if(ch == ')') {
                 // pop and solve
                 while(operators.size() > 0 && operators.peek() != '(') {
@@ -24,7 +24,15 @@ public class InfixEvalution {
                 }
                 operators.pop();
             } else if(ch == '+' || ch == '-' || ch == '*' || ch == '/') {
-                // push
+
+                // push and solve
+                while(operators.size() > 0 && operators.peek() != '(' && precedence(operators.peek()) >= precedence(ch)) {
+                    char op = operators.pop();
+                    int v2 = operands.pop();
+                    int v1 = operands.pop();
+                    int ans1 = solve(v1, v2, op);
+                    operands.push(ans1);
+                }
                 operators.push(ch); 
             } else {
                 // push
@@ -39,9 +47,6 @@ public class InfixEvalution {
             operands.push(ans1);
         }
         ans = operands.pop();
-
-        System.out.println(operands);
-        System.out.println(operators);
         return ans;
     }
 

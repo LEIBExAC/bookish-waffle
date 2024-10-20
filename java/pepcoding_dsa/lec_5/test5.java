@@ -1,9 +1,7 @@
 package pepcoding_dsa.lec_5;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Stack;
 
 import pepcoding_dsa.lec_4.PrintArray;
 
