@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MergeOverlappingIntervals",
+            "request": "launch",
+            "mainClass": "pepcoding_dsa.lec_5.MergeOverlappingIntervals",
+            "projectName": "practice_6908a4cc"
+        }
+    ]
+}
