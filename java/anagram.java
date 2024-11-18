@@ -20,7 +20,9 @@ public class anagram {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter 1st string: ");
         String str1 = sc.next();
+        System.out.print("Enter 2nd string: ");     
         String str2 = sc.next();
         sc.close();
         System.out.println(ana(str1, str2));

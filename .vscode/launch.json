@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SmallestNumberPattern",
+            "request": "launch",
+            "mainClass": "pepcoding_dsa.lec_5.SmallestNumberPattern",
+            "projectName": "bookish-waffle_7a82338a"
+        },
+        {
+            "type": "java",
             "name": "MergeOverlappingIntervals",
             "request": "launch",
             "mainClass": "pepcoding_dsa.lec_5.MergeOverlappingIntervals",
