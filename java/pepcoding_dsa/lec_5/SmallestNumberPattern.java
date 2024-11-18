@@ -5,6 +5,7 @@ import java.util.Stack;
 
 public class SmallestNumberPattern {
     public static String smallestNumberPattern(String str) {
+        assert str != null && str.length() > 0 : "Invalid input";
         String sb = "";
         Stack<Integer> stack = new Stack<>();
         for(int i = 0; i <= str.length(); i++){
