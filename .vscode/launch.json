@@ -5,7 +5,11 @@
             "name": "SmallestNumberPattern",
             "request": "launch",
             "mainClass": "pepcoding_dsa.lec_5.SmallestNumberPattern",
+<<<<<<< HEAD
             "projectName": "practice_6908a4cc"
+=======
+            "projectName": "bookish-waffle_7a82338a"
+>>>>>>> 603054563a0ceaa6f688ad1d444611b519a27e37
         },
         {
             "type": "java",
