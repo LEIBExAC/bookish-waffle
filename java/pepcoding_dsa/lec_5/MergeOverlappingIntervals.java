@@ -24,7 +24,7 @@ public class MergeOverlappingIntervals {
 
         Pair[] pairs = new Pair[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            pairs[i] = new Pair(arr[i][0], arr[i][0]);
+            pairs[i] = new Pair(arr[i][0], arr[i][1]);
         }
 
         Arrays.sort(pairs);
@@ -46,7 +46,7 @@ public class MergeOverlappingIntervals {
         while (st.size() > 0) {
             rs.push(st.pop());
         }
-
+        System.out.println("The merged intervals are: ");
         while (rs.size() > 0) {
             Pair p = rs.pop();
             System.out.println(p.st + " " + p.et);
